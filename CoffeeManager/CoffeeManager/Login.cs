@@ -26,8 +26,21 @@ namespace CoffeeManager
             {
                 if (txtUserName.Text.ToString() == account.Username && hash.verityPassword(TxtPassword.Text.ToString(),account.Password))
                 {
-                    MessageBox.Show("have account in db");
-                }
+                    if(account.Role == Role.EMPLOYEE)
+                    {
+                       Employee employeeForm = new Employee();
+                        this.Visible = false;
+                        employeeForm.ShowDialog();
+                        this.Close();
+                    }
+                    else if(account.Role == Role.ADMIN)
+                    {
+                        Admin adminForm = new Admin();
+                        this.Visible = false;
+                        adminForm.ShowDialog();
+                        this.Close();
+                    }
+                  }
             }
         }
     }
