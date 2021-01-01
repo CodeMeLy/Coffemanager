@@ -48,5 +48,25 @@ namespace CoffeeManager.control
                 connection = null;
             }
         }
+    public List<Account> getAccountFromDb()
+        {
+            List<Account> accounts = new List<Account>();
+            SqlConnection connection = DbUtils.GetDBConnection();
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "Select * From Account";
+
+                var reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var username = reader["username"].ToString();
+                    var password = reader["password"].ToString();
+                    var role = int.Parse(reader["role"].ToString())==0?Role.ADMIN:Role.EMPLOYEE;
+                    accounts.Add(new Account(username, password, role));
+                }
+            }
+            return accounts;
+        }    
     }
 }

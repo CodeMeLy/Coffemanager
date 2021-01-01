@@ -30,11 +30,8 @@ namespace CoffeeManager.control
         }
         public static bool verityPassword( string input, string hash)
         {
-            // Hash the input.
-            string hashOfInput = hashString(input);
-            // Create a StringComparer an compare the hashes.
-            StringComparer comparer = StringComparer.OrdinalIgnoreCase;
-            return comparer.Compare(hashOfInput, hash) == 0;
+            md5Hash = MD5.Create();
+            return StringComparer.OrdinalIgnoreCase.Compare(hashString(input), hash)==0;
         }
     }
 }

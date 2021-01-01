@@ -25,5 +25,11 @@ namespace Test
             manager.createAccount(account);
 
         }
+        [TestMethod]
+        public void getEmployeeAcount()
+        {
+            AccountManager manager = new AccountManager();
+            System.Collections.Generic.List<Account> account = manager.getAccountFromDb();
+        }
     }
 }

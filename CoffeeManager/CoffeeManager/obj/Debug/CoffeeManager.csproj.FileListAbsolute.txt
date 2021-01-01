@@ -4,10 +4,10 @@ D:\CoffeeManager\CoffeeManager\CoffeeManager\bin\Debug\CoffeeManager.pdb
 D:\CoffeeManager\CoffeeManager\CoffeeManager\bin\Debug\MetroFramework.dll
 D:\CoffeeManager\CoffeeManager\CoffeeManager\bin\Debug\MetroFramework.Fonts.dll
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.csprojAssemblyReference.cache
-D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Form1.resources
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Properties.Resources.resources
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.csproj.GenerateResource.cache
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.csproj.CoreCompileInputs.cache
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.csproj.CopyComplete
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.exe
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.pdb
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Login.resources
