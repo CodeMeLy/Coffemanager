@@ -16,5 +16,10 @@ namespace CoffeeManager
         {
             InitializeComponent();
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            // 3 forms
+        }
     }
 }
