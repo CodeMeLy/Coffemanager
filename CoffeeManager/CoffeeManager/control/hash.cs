@@ -12,6 +12,7 @@ namespace CoffeeManager.control
         public static MD5 md5Hash;
         public static string hashString(string input)
         {
+            md5Hash = MD5.Create();
             // Convert the input string to a byte array and compute the hash.
             byte[] data = md5Hash.ComputeHash(Encoding.UTF8.GetBytes(input));
 
