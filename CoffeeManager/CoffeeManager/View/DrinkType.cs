@@ -85,5 +85,21 @@ namespace CoffeeManager
                 display();
             }
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            this.Visible = false;
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            this.Visible = false;
+            employee.ShowDialog();
+            this.Close();
+        }
     }
 }

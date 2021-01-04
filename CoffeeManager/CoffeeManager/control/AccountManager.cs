@@ -10,8 +10,9 @@ namespace CoffeeManager.control
 {
     public class AccountManager
     {
-        public void createAccount(Account account)
+        public bool createAccount(Account account)
         {
+            int rowCount = 0;
             SqlConnection connection = DbUtils.GetDBConnection();
             connection.Open();
             try
@@ -32,7 +33,7 @@ namespace CoffeeManager.control
                 // Thêm tham số @lowSalary (Viết ngắn hơn nữa).
                 cmd.Parameters.Add("@role", SqlDbType.Int).Value = account.Role;
                 // Thực thi Command (Dùng cho delete, insert, update). 
-                int rowCount = cmd.ExecuteNonQuery();
+                rowCount = cmd.ExecuteNonQuery();
 
                 Console.WriteLine("Row Count affected = " + rowCount);
             }
@@ -47,6 +48,7 @@ namespace CoffeeManager.control
                 connection.Dispose();
                 connection = null;
             }
+            return rowCount!=0;
         }
     public List<Account> getAccountFromDb()
         {

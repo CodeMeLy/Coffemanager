@@ -32,7 +32,7 @@ namespace CoffeeManager
             this.btn1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // btn1
@@ -65,21 +65,21 @@ namespace CoffeeManager
             this.metroButton3.Text = "Đặt đồ uống";
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
-            // metroButton5
+            // metroButton1
             // 
-            this.metroButton5.Location = new System.Drawing.Point(37, 244);
-            this.metroButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(191, 132);
-            this.metroButton5.TabIndex = 4;
-            this.metroButton5.Text = "đăng xuất";
+            this.metroButton1.Location = new System.Drawing.Point(611, 33);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(106, 23);
+            this.metroButton1.TabIndex = 5;
+            this.metroButton1.Text = "Đăng xuất";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click_1);
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 409);
-            this.Controls.Add(this.metroButton5);
+            this.ClientSize = new System.Drawing.Size(800, 261);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.btn1);
@@ -97,6 +97,6 @@ namespace CoffeeManager
         private MetroFramework.Controls.MetroButton btn1;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton5;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

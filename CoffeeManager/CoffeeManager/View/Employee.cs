@@ -46,5 +46,13 @@ namespace CoffeeManager
             tableSetter.ShowDialog();
             this.Close();
         }
+
+        private void metroButton1_Click_1(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            this.Visible = false;
+            Login.ShowDialog();
+            this.Close();
+        }
     }
 }

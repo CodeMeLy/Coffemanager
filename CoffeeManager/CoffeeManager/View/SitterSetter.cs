@@ -37,7 +37,7 @@ namespace CoffeeManager.View
                 cbDrink.Items.Add(drink.Id);
             }
             // quan li bill
-            bills = billManager.GetBills();
+            bills = billManager.GetCallBills();
             if (selectSitter.Count != 0)
             {
                 selectSitter.Clear();
@@ -45,7 +45,10 @@ namespace CoffeeManager.View
             foreach (Bill bill in bills)
             {
                 if (bill.Status == "call")
+                {
                     cbSitter.Items.Add(bill.IdSitter);
+                    cbSitter2.Items.Add(bill.IdSitter);
+                }
             }
             loadColorTable();
             display();
@@ -54,16 +57,18 @@ namespace CoffeeManager.View
         {
             BillManager billManager = new BillManager();
             BillInfoManager billInfoManager = new BillInfoManager();
-            bills = billManager.GetBills();
+            bills = billManager.GetCallBills();
             billInfos = billInfoManager.GetBillInfos(); 
             //Tải dữ liệu lên dataGridView
             dataGridView1.DataSource = bills;
             dataGridView2.DataSource = billInfos;
+            dataGridView3.DataSource = bills;
+
         }
         public void loadColorTable()
         {
             BillManager billManager = new BillManager();
-            bills = billManager.GetBills();
+            bills = billManager.GetCallBills();
             if (selectSitter.Count != 0)
             {
                 selectSitter.Clear();
@@ -77,65 +82,129 @@ namespace CoffeeManager.View
             {
                 button1.BackColor = Color.Red;
             }
+            else
+            {
+                button1.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(2))
             {
                 button2.BackColor = Color.Red;
+            }
+            else
+            {
+                button2.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(3))
             {
                 button3.BackColor = Color.Red;
             }
+            else
+            {
+                button3.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(4))
             {
                 button4.BackColor = Color.Red;
+            }
+            else
+            {
+                button4.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(5))
             {
                 button5.BackColor = Color.Red;
             }
+            else
+            {
+                button5.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(6))
             {
                 button6.BackColor = Color.Red;
+            }
+            else
+            {
+                button6.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(7))
             {
                 button7.BackColor = Color.Red;
             }
+            else
+            {
+                button7.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(8))
             {
                 button8.BackColor = Color.Red;
+            }
+            else
+            {
+                button8.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(9))
             {
                 button9.BackColor = Color.Red;
             }
+            else
+            {
+                button9.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(10))
             {
                 button10.BackColor = Color.Red;
+            }
+            else
+            {
+                button10.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(11))
             {
                 button11.BackColor = Color.Red;
             }
+            else
+            {
+                button11.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(12))
             {
                 button12.BackColor = Color.Red;
+            }
+            else
+            {
+                button12.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(13))
             {
                 button13.BackColor = Color.Red;
             }
+            else
+            {
+                button13.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(14))
             {
                 button14.BackColor = Color.Red;
+            }
+            else
+            {
+                button14.BackColor = Color.Gray;
             }
             if (selectSitter.Contains(15))
             {
                 button15.BackColor = Color.Red;
             }
+            else
+            {
+                button15.BackColor = Color.Gray;
+            }
             if (selectSitter.Contains(16))
             {
                 button16.BackColor = Color.Red;
+            }
+            else
+            {
+                button16.BackColor = Color.Gray;
             }
 
         }
@@ -177,7 +246,7 @@ namespace CoffeeManager.View
         {
             bool flag = true;
             BillManager billManager = new BillManager();
-            bills = billManager.GetBills();
+            bills = billManager.GetCallBills();
             foreach(Bill bill in bills)
             {
                 if(sitter == bill.IdSitter && bill.Status == "call")
@@ -197,6 +266,8 @@ namespace CoffeeManager.View
             {
                 billManager.addBill(new model.Bill(idBill, currentSelect, "call"));
                 cbSitter.Items.Add(currentSelect);
+                cbSitter2.Items.Add(currentSelect);
+
             }
             display();
             loadColorTable();
@@ -482,7 +553,7 @@ namespace CoffeeManager.View
         private void metroButton4_Click(object sender, EventArgs e) {
             BillManager billManager = new BillManager();
             List<Bill> bills = new List<Bill>();
-            bills = billManager.GetBills();
+            bills = billManager.GetCallBills();
             if(bills.Count != 0)
              {
                 foreach (Bill bill in bills)
@@ -509,7 +580,8 @@ namespace CoffeeManager.View
                     billInfoManager.addBillInfo(billInfo);
 
             }
-            dataGridView2.DataSource = billInfoManager.findBillInfo(int.Parse(cbSitter.SelectedItem.ToString()));
+            if(cbSitter.SelectedItem!=null)
+                dataGridView2.DataSource = billInfoManager.findBillInfo(int.Parse(cbSitter.SelectedItem.ToString()));
         }
         private void metroTabPage2_Click(object sender, EventArgs e)
         {
@@ -520,6 +592,96 @@ namespace CoffeeManager.View
         {
             BillInfoManager billInfoManager = new BillInfoManager();
             dataGridView2.DataSource = billInfoManager.findBillInfo(int.Parse(cbSitter.SelectedItem.ToString()));
+        }
+
+        private void metroButton3_Click_1(object sender, EventArgs e)
+        {
+            BillManager billManager = new BillManager();
+            billManager.removeBill(currentSelect);
+            loadColorTable();
+            bills = billManager.GetCallBills();
+            cbSitter.Items.Clear();
+            cbSitter2.Items.Clear();
+            foreach(Bill bill in bills)
+            {
+                cbSitter.Items.Add(bill.IdSitter);
+                cbSitter2.Items.Add(bill.IdSitter);
+            }
+            display();
+        }
+
+        private void cbSitter2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            total.Text = (billInfoManager.payBill(int.Parse(cbSitter2.SelectedItem.ToString()))).ToString();
+        }
+
+        private void metroButton5_Click(object sender, EventArgs e)
+        {
+            BillManager billManager = new BillManager();
+            billManager.updateStatus(int.Parse(cbSitter2.SelectedItem.ToString()));
+            bills = billManager.GetCallBills();
+            if (selectSitter.Count != 0)
+            {
+               
+                cbSitter.Items.Clear();
+                cbSitter2.Items.Clear();
+                selectSitter.Clear();
+            }
+            foreach (Bill bill in bills)
+            {
+                if (bill.Status == "call")
+                {
+                    cbSitter.Items.Add(bill.IdSitter);
+                    cbSitter2.Items.Add(bill.IdSitter);
+                }
+            }
+            loadColorTable();
+            display();
+            total.Text = "0";
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            BillManager billManager = new BillManager();
+            bills = billManager.GetCallBills();
+            bool existSitter = false;
+            foreach(Bill bill in bills)
+            {
+                if (txtTo.Text.ToString() == bill.IdSitter.ToString())
+                {
+                    MessageBox.Show("Vị trí đã có khách khác đặt chỗ!");
+                    existSitter = true;
+                }
+            }
+            if (!existSitter)
+            {
+                billManager.updateSitter(int.Parse(txtFrom.Text.ToString()), int.Parse(txtTo.Text.ToString()));
+                loadColorTable();
+                cbSitter.Items.Clear();
+                cbSitter2.Items.Clear();
+                foreach (Bill bill in bills)
+                {
+                    cbSitter.Items.Add(bill.IdSitter);
+                    cbSitter2.Items.Add(bill.IdSitter);
+                }
+                display();
+            }
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            this.Visible = false;
+            Login.ShowDialog();
+            this.Close();
+        }
+
+        private void metroButton7_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            this.Visible = false;
+            employee.ShowDialog();
+            this.Close();
         }
     }
 }

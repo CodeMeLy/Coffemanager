@@ -41,6 +41,8 @@ namespace CoffeeManager
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -151,11 +153,31 @@ namespace CoffeeManager
             this.label1.TabIndex = 12;
             this.label1.Text = "Tìm kiếm:";
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(806, 37);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(104, 23);
+            this.metroButton1.TabIndex = 13;
+            this.metroButton1.Text = "Đăng xuất";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroButton5
+            // 
+            this.metroButton5.Location = new System.Drawing.Point(696, 37);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(104, 23);
+            this.metroButton5.TabIndex = 14;
+            this.metroButton5.Text = "trở về";
+            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
+            // 
             // DrinkType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 564);
+            this.Controls.Add(this.metroButton5);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
@@ -170,7 +192,7 @@ namespace CoffeeManager
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "DrinkType";
             this.Padding = new System.Windows.Forms.Padding(20, 74, 20, 20);
-            this.Text = "DrinkType";
+            this.Text = "Loại đồ uống";
             this.Load += new System.EventHandler(this.DrinkType_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -192,5 +214,7 @@ namespace CoffeeManager
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton4;
         private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton5;
     }
 }

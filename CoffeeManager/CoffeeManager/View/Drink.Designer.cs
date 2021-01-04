@@ -48,6 +48,8 @@ namespace CoffeeManager.View
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.txtSearchBox = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton5 = new MetroFramework.Controls.MetroButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +67,7 @@ namespace CoffeeManager.View
             // 
             // metroButton4
             // 
-            this.metroButton4.Location = new System.Drawing.Point(317, 295);
+            this.metroButton4.Location = new System.Drawing.Point(318, 326);
             this.metroButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(67, 23);
@@ -75,7 +77,7 @@ namespace CoffeeManager.View
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(245, 295);
+            this.metroButton3.Location = new System.Drawing.Point(246, 326);
             this.metroButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(67, 23);
@@ -85,7 +87,7 @@ namespace CoffeeManager.View
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(173, 295);
+            this.metroButton2.Location = new System.Drawing.Point(174, 326);
             this.metroButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(67, 23);
@@ -104,7 +106,7 @@ namespace CoffeeManager.View
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(78, 384);
+            this.pictureBox1.Location = new System.Drawing.Point(79, 415);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(272, 139);
@@ -115,7 +117,7 @@ namespace CoffeeManager.View
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(418, 102);
+            this.dataGridView1.Location = new System.Drawing.Point(419, 133);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -126,7 +128,7 @@ namespace CoffeeManager.View
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(27, 146);
+            this.metroLabel2.Location = new System.Drawing.Point(28, 177);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(96, 20);
             this.metroLabel2.TabIndex = 16;
@@ -143,7 +145,7 @@ namespace CoffeeManager.View
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(173, 143);
+            this.txtName.Location = new System.Drawing.Point(174, 174);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(211, 23);
@@ -151,7 +153,7 @@ namespace CoffeeManager.View
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(173, 99);
+            this.txtId.Location = new System.Drawing.Point(174, 130);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(211, 23);
@@ -160,7 +162,7 @@ namespace CoffeeManager.View
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(96, 102);
+            this.metroLabel3.Location = new System.Drawing.Point(97, 133);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(20, 20);
             this.metroLabel3.TabIndex = 24;
@@ -169,7 +171,7 @@ namespace CoffeeManager.View
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(22, 199);
+            this.metroLabel4.Location = new System.Drawing.Point(23, 230);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(101, 20);
             this.metroLabel4.TabIndex = 25;
@@ -179,14 +181,14 @@ namespace CoffeeManager.View
             // 
             this.cbDrinkType.FormattingEnabled = true;
             this.cbDrinkType.ItemHeight = 24;
-            this.cbDrinkType.Location = new System.Drawing.Point(173, 189);
+            this.cbDrinkType.Location = new System.Drawing.Point(174, 220);
             this.cbDrinkType.Name = "cbDrinkType";
             this.cbDrinkType.Size = new System.Drawing.Size(211, 30);
             this.cbDrinkType.TabIndex = 26;
             // 
             // txtCost
             // 
-            this.txtCost.Location = new System.Drawing.Point(173, 241);
+            this.txtCost.Location = new System.Drawing.Point(174, 272);
             this.txtCost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCost.Name = "txtCost";
             this.txtCost.Size = new System.Drawing.Size(211, 23);
@@ -195,7 +197,7 @@ namespace CoffeeManager.View
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(96, 244);
+            this.metroLabel5.Location = new System.Drawing.Point(97, 275);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(27, 20);
             this.metroLabel5.TabIndex = 28;
@@ -203,7 +205,7 @@ namespace CoffeeManager.View
             // 
             // txtSearchBox
             // 
-            this.txtSearchBox.Location = new System.Drawing.Point(536, 62);
+            this.txtSearchBox.Location = new System.Drawing.Point(537, 93);
             this.txtSearchBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearchBox.Name = "txtSearchBox";
             this.txtSearchBox.Size = new System.Drawing.Size(525, 23);
@@ -213,17 +215,37 @@ namespace CoffeeManager.View
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(434, 62);
+            this.metroLabel6.Location = new System.Drawing.Point(435, 93);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(62, 20);
             this.metroLabel6.TabIndex = 30;
             this.metroLabel6.Text = "tìm kiếm";
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(949, 54);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(113, 23);
+            this.metroButton1.TabIndex = 31;
+            this.metroButton1.Text = "Đăng xuất";
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroButton5
+            // 
+            this.metroButton5.Location = new System.Drawing.Point(840, 54);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(103, 25);
+            this.metroButton5.TabIndex = 32;
+            this.metroButton5.Text = "trở về";
+            this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
             // 
             // Drink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 560);
+            this.Controls.Add(this.metroButton5);
+            this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.txtSearchBox);
             this.Controls.Add(this.metroLabel5);
@@ -243,7 +265,7 @@ namespace CoffeeManager.View
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtId);
             this.Name = "Drink";
-            this.Text = "Drink";
+            this.Text = "Đồ uống";
             this.Load += new System.EventHandler(this.Drink_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -272,5 +294,7 @@ namespace CoffeeManager.View
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroTextBox txtSearchBox;
         private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton5;
     }
 }

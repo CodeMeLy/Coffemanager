@@ -80,12 +80,6 @@
     <Compile Include="View\Drink.Designer.cs">
       <DependentUpon>Drink.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\DrinkOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\DrinkOrder.Designer.cs">
-      <DependentUpon>DrinkOrder.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\DrinkType.cs">
       <SubType>Form</SubType>
     </Compile>
