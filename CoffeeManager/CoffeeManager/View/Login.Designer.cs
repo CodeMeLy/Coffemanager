@@ -127,7 +127,7 @@ namespace CoffeeManager
             this.Controls.Add(this.btnSignIn);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Login";
-            this.Text = "Form1";
+            this.Text = "Đăng Nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

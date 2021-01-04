@@ -11,3 +11,8 @@ D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.csproj.Copy
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.exe
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.pdb
 D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Login.resources
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Employee.resources
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.DrinkType.resources
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.Admin.resources
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.View.Drink.resources
+D:\CoffeeManager\CoffeeManager\CoffeeManager\obj\Debug\CoffeeManager.View.SitterSetter.resources

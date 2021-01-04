@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CoffeeManager
+namespace CoffeeManager.View
 {
-    public partial class Admin : Form
+    public partial class DrinkOrder : MetroFramework.Forms.MetroForm
     {
-        public Admin()
+        public DrinkOrder()
         {
             InitializeComponent();
         }

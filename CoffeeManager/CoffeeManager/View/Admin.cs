@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace CoffeeManager
 {
-    public partial class Employee : Form
+    public partial class Admin : MetroFramework.Forms.MetroForm
     {
-        public Employee()
+        public Admin()
         {
             InitializeComponent();
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
